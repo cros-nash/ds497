@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Experiment</title>
+        <script src="https://unpkg.com/jspsych@7.3.4"></script>
+        <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.2.0"></script>
+        <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet"type="text/css" />
+    </head>
+    <body>
+
+    </body>
+    <script>
+        const jsPsych = initJsPsych();
+        const just_one_trial = {
+            type: jsPsychHtmlButtonResponse,
+            choices: ['Ok'],
+            stimulus: "Trial 1: Click Okto end the experiment."
+        };
+        jsPsych.run([just_one_trial]);
+    </script>
+    </title>
+    
+</html>
