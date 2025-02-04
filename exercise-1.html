@@ -4,6 +4,8 @@
         <title>My Experiment</title>
         <script src="https://unpkg.com/jspsych@7.3.4"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.2.0"></script>
+        <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.3"></script>
+        <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.4"></script>
         <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet"type="text/css" />
     </head>
     <body>
@@ -14,9 +16,24 @@
         const just_one_trial = {
             type: jsPsychHtmlButtonResponse,
             choices: ['Ok'],
-            stimulus: "Trial 1: Click Okto end the experiment."
+            stimulus: "Trial 1: Click Ok to end the experiment."
         };
-        jsPsych.run([just_one_trial]);
+        
+        const save_data_trial = {
+            type: jsPsychPipe,
+            action: "save",
+            experiment_id: "4BZipYsakwWq",
+            filename: "test_data.csv",
+            data_string: ()=>jsPsych.data.get().csv(),
+            on_finish: function(data){alert(data.result.message)}
+        };
+
+        const end_trial = {
+            type: jsPsychHtmlKeyboardResponse, 
+            stimulus: 'Nothing left to do here.'
+        };
+
+        jsPsych.run([just_one_trial, save_data_trial, end_trial]);
     </script>
     </title>
     
