@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stroop Task Experiment</title>
+    <script src="https://unpkg.com/jspsych@7.3.4"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.2.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.3"></script>
+    <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.4"></script>
+    <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script>
+    const jsPsych = initJsPsych();
+
+    const words = ['red', 'blue', 'green'];
+    const colors = ['red', 'blue', 'green'];
+
+    let stroopStimuli = [];
+    words.forEach(word => {
+      colors.forEach(color => {
+        stroopStimuli.push({
+          word: word,
+          color: color,
+          congruency: (word === color) ? 'congruent' : 'incongruent'
+        });
+      });
+    });
+
+    let timelineVariables = [];
+    stroopStimuli.forEach(stim => {
+      timelineVariables.push(stim);
+      timelineVariables.push(stim);
+    });
+
+    timelineVariables = jsPsych.randomization.shuffle(timelineVariables);
+
+    const trialBlock = {
+      timeline: [
+        {
+          type: jsPsychHtmlKeyboardResponse,
+          stimulus: '<p>Press any key when ready for the next trial</p>',
+          choices: "ALL_KEYS"
+        },
+        {
+          type: jsPsychHtmlButtonResponse,
+          stimulus: function() {
+            const currentTrial = jsPsych.timelineVariable('trial_data');
+            return '<p style="color:' + currentTrial.color + ';">' + currentTrial.word + '</p>';
+          },
+          choices: ['MATCH', 'NOT'],
+          data: function() {
+            const currentTrial = jsPsych.timelineVariable('trial_data');
+            return {
+              word: currentTrial.word,
+              color: currentTrial.color,
+              congruency: currentTrial.congruency
+            };
+          }
+        }
+      ],
+      timeline_variables: timelineVariables.map(item => ({ trial_data: item })),
+      randomize_order: true
+    };
+
+    const saveDataTrial = {
+      type: jsPsychPipe,
+      action: "save",
+      experiment_id: "4BZipYsakwWq",
+      filename: "stroop_data.csv",
+      data_string: () => jsPsych.data.get().csv(),
+      on_finish: function(data) {
+        alert("Data saved to OSF. Message: " + data.result.message);
+      }
+    };
+
+    const endTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '<p>The experiment is complete. Press any key to finish.</p>',
+      choices: "ALL_KEYS"
+    };
+
+    const timeline = [];
+    timeline.push(trialBlock);
+    timeline.push(saveDataTrial);
+    timeline.push(endTrial);
+
+    jsPsych.run(timeline);
+  </script>
+</html>
