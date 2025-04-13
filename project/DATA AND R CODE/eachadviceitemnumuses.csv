@@ -1,0 +1,81 @@
+﻿Condition and Correctness (all fake),Condition,Correctness,Advice Item,Number of Reasonings,NumResponses,Percentage,Percentage/8
+A CORRECT,Control,Correct,Asymmetric Facial Hair,3,374,0.802139037,0.10026738
+A CORRECT,Control,Correct,Asymmetric Earrings,6,374,1.604278075,0.200534759
+A CORRECT,Control,Correct,Asymmetric Glasses,0,374,0,0
+A CORRECT,Control,Correct,Strange Clothing Fabric,3,374,0.802139037,0.10026738
+A CORRECT,Control,Correct,Abnormal Clothing Structure,7,374,1.871657754,0.233957219
+A CORRECT,Control,Correct,Colours Bleed From Background,2,374,0.534759358,0.06684492
+A CORRECT,Control,Correct,Warped Companion Faces,0,374,0,0
+A CORRECT,Control,Correct,Distorted Text/Patterns,0,374,0,0
+A CORRECT,Control,Correct,Impossible Location,20,374,5.347593583,0.668449198
+A CORRECT,Control,Correct,Accessories Don’t Make Sense,27,374,7.219251337,0.902406417
+A WRONG,Control,Wrong,Asymmetric Facial Hair,0,233,0,0
+A WRONG,Control,Wrong,Asymmetric Earrings,0,233,0,0
+A WRONG,Control,Wrong,Asymmetric Glasses,0,233,0,0
+A WRONG,Control,Wrong,Strange Clothing Fabric,0,233,0,0
+A WRONG,Control,Wrong,Abnormal Clothing Structure,3,233,1.287553648,0.160944206
+A WRONG,Control,Wrong,Colours Bleed From Background,0,233,0,0
+A WRONG,Control,Wrong,Warped Companion Faces,0,233,0,0
+A WRONG,Control,Wrong,Distorted Text/Patterns,0,233,0,0
+A WRONG,Control,Wrong,Impossible Location,6,233,2.575107296,0.321888412
+A WRONG,Control,Wrong,Accessories Don’t Make Sense,7,233,3.004291845,0.375536481
+B CORRECT,Familiarization,Correct,Asymmetric Facial Hair,2,407,0.491400491,0.061425061
+B CORRECT,Familiarization,Correct,Asymmetric Earrings,6,407,1.474201474,0.184275184
+B CORRECT,Familiarization,Correct,Asymmetric Glasses,1,407,0.245700246,0.030712531
+B CORRECT,Familiarization,Correct,Strange Clothing Fabric,3,407,0.737100737,0.092137592
+B CORRECT,Familiarization,Correct,Abnormal Clothing Structure,10,407,2.457002457,0.307125307
+B CORRECT,Familiarization,Correct,Colours Bleed From Background,0,407,0,0
+B CORRECT,Familiarization,Correct,Warped Companion Faces,1,407,0.245700246,0.030712531
+B CORRECT,Familiarization,Correct,Distorted Text/Patterns,0,407,0,0
+B CORRECT,Familiarization,Correct,Impossible Location,19,407,4.668304668,0.583538084
+B CORRECT,Familiarization,Correct,Accessories Don’t Make Sense,58,407,14.25061425,1.781326781
+B WRONG,Familiarization,Wrong,Asymmetric Facial Hair,1,258,0.387596899,0.048449612
+B WRONG,Familiarization,Wrong,Asymmetric Earrings,1,258,0.387596899,0.048449612
+B WRONG,Familiarization,Wrong,Asymmetric Glasses,0,258,0,0
+B WRONG,Familiarization,Wrong,Strange Clothing Fabric,1,258,0.387596899,0.048449612
+B WRONG,Familiarization,Wrong,Abnormal Clothing Structure,0,258,0,0
+B WRONG,Familiarization,Wrong,Colours Bleed From Background,0,258,0,0
+B WRONG,Familiarization,Wrong,Warped Companion Faces,0,258,0,0
+B WRONG,Familiarization,Wrong,Distorted Text/Patterns,0,258,0,0
+B WRONG,Familiarization,Wrong,Impossible Location,5,258,1.937984496,0.242248062
+B WRONG,Familiarization,Wrong,Accessories Don’t Make Sense,26,258,10.07751938,1.259689923
+C CORRECT,One-Time Advice,Correct,Asymmetric Facial Hair,20,507,3.944773176,0.493096647
+C CORRECT,One-Time Advice,Correct,Asymmetric Earrings,67,507,13.21499014,1.651873768
+C CORRECT,One-Time Advice,Correct,Asymmetric Glasses,9,507,1.775147929,0.221893491
+C CORRECT,One-Time Advice,Correct,Strange Clothing Fabric,53,507,10.45364892,1.306706115
+C CORRECT,One-Time Advice,Correct,Abnormal Clothing Structure,73,507,14.39842209,1.799802761
+C CORRECT,One-Time Advice,Correct,Colours Bleed From Background,16,507,3.15581854,0.394477318
+C CORRECT,One-Time Advice,Correct,Warped Companion Faces,4,507,0.788954635,0.098619329
+C CORRECT,One-Time Advice,Correct,Distorted Text/Patterns,36,507,7.100591716,0.887573965
+C CORRECT,One-Time Advice,Correct,Impossible Location,100,507,19.72386588,2.465483235
+C CORRECT,One-Time Advice,Correct,Accessories Don’t Make Sense,87,507,17.15976331,2.144970414
+C WRONG,One-Time Advice,Wrong,Asymmetric Facial Hair,7,290,2.413793103,0.301724138
+C WRONG,One-Time Advice,Wrong,Asymmetric Earrings,5,290,1.724137931,0.215517241
+C WRONG,One-Time Advice,Wrong,Asymmetric Glasses,2,290,0.689655172,0.086206897
+C WRONG,One-Time Advice,Wrong,Strange Clothing Fabric,5,290,1.724137931,0.215517241
+C WRONG,One-Time Advice,Wrong,Abnormal Clothing Structure,23,290,7.931034483,0.99137931
+C WRONG,One-Time Advice,Wrong,Colours Bleed From Background,7,290,2.413793103,0.301724138
+C WRONG,One-Time Advice,Wrong,Warped Companion Faces,7,290,2.413793103,0.301724138
+C WRONG,One-Time Advice,Wrong,Distorted Text/Patterns,12,290,4.137931034,0.517241379
+C WRONG,One-Time Advice,Wrong,Impossible Location,35,290,12.06896552,1.50862069
+C WRONG,One-Time Advice,Wrong,Accessories Don’t Make Sense,45,290,15.51724138,1.939655173
+D CORRECT,Advice with Reminders,Correct,Asymmetric Facial Hair,18,418,4.306220096,0.538277512
+D CORRECT,Advice with Reminders,Correct,Asymmetric Earrings,48,418,11.48325359,1.435406699
+D CORRECT,Advice with Reminders,Correct,Asymmetric Glasses,19,418,4.545454545,0.568181818
+D CORRECT,Advice with Reminders,Correct,Strange Clothing Fabric,87,418,20.81339713,2.601674641
+D CORRECT,Advice with Reminders,Correct,Abnormal Clothing Structure,69,418,16.50717703,2.063397129
+D CORRECT,Advice with Reminders,Correct,Colours Bleed From Background,51,418,12.20095694,1.525119618
+D CORRECT,Advice with Reminders,Correct,Warped Companion Faces,10,418,2.392344498,0.299043062
+D CORRECT,Advice with Reminders,Correct,Distorted Text/Patterns,57,418,13.63636364,1.704545455
+D CORRECT,Advice with Reminders,Correct,Impossible Location,60,418,14.35406699,1.794258374
+D CORRECT,Advice with Reminders,Correct,Accessories Don’t Make Sense,87,418,20.81339713,2.601674641
+D WRONG,Advice with Reminders,Wrong,Asymmetric Facial Hair,14,245,5.714285714,0.714285714
+D WRONG,Advice with Reminders,Wrong,Asymmetric Earrings,3,245,1.224489796,0.153061225
+D WRONG,Advice with Reminders,Wrong,Asymmetric Glasses,2,245,0.816326531,0.102040816
+D WRONG,Advice with Reminders,Wrong,Strange Clothing Fabric,11,245,4.489795918,0.56122449
+D WRONG,Advice with Reminders,Wrong,Abnormal Clothing Structure,26,245,10.6122449,1.326530613
+D WRONG,Advice with Reminders,Wrong,Colours Bleed From Background,13,245,5.306122449,0.663265306
+D WRONG,Advice with Reminders,Wrong,Warped Companion Faces,6,245,2.448979592,0.306122449
+D WRONG,Advice with Reminders,Wrong,Distorted Text/Patterns,18,245,7.346938776,0.918367347
+D WRONG,Advice with Reminders,Wrong,Impossible Location,53,245,21.63265306,2.704081633
+D WRONG,Advice with Reminders,Wrong,Accessories Don’t Make Sense,54,245,22.04081633,2.755102041

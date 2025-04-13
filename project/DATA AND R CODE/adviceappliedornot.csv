@@ -1,0 +1,9 @@
+﻿Condition,Correctness,RespsWAdvice,Num Responses,%ge ,Num Advice Items,Advice Items Per Reason
+Control,Correct,60,374,16.04278075,75,1.25
+Control,Incorrect,15,233,6.43776824,16,1.066666667
+Familiarization,Correct,84,407,20.63882064,100,1.19047619
+Familiarization,Incorrect,28,258,10.85271318,34,1.214285714
+One-Time Advice,Correct,356,507,70.21696252,465,1.306179775
+One-Time Advice,Incorrect,118,290,40.68965517,148,1.254237288
+Advice With Reminders,Correct,335,418,80.14354067,506,1.510447761
+Advice With Reminders,Incorrect,138,245,56.32653061,200,1.449275362
